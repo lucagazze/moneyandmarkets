@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <!--
-    TEMPLATE "MONEY AND MARKETS" — adapted from the Physics Study Lab funnel structure
+    TRACK 1 "MONEY AND MARKETS" (part of The Analyst's Desk academy) — adapted from the
+    Physics Study Lab funnel structure. Content/copy fully aligned to PRODUCT-BRIEF-FINAL.md
+    and ACADEMY-ROADMAP.md as of 2026-09-19 (Markets Illustrated / CAN SLIM curriculum —
+    the old beginner personal-finance copy has been fully replaced).
     Replace before publishing:
       1) Image assets in /img are NOT YET GENERATED for this product (cover, sample pages,
          bonus covers, personas, author photo) — this is a content/copy pass only so far.
+         The sample-page captions/alt text now describe the NEW curriculum (CAN SLIM,
+         Wyckoff, Darvas), but the actual image files still show OLD placeholder content
+         until regenerated.
       2) Domain / contact details: search "TU-DOMINIO"
       3) Purchase link: search data-checkout and href="#offerta" — currently a placeholder,
          needs a real checkout URL once one exists for this product.
@@ -14,11 +20,16 @@
          that would mix two unrelated products' conversion data in Meta's system. Create a
          new pixel for Money and Markets and paste it in below (see MM_PRODUCT for the event
          payload shape to keep).
-      5) Social-proof numbers (readers, recent purchases) are placeholders — swap for real data.
+      5) Social-proof numbers (students, recent purchases) are placeholders — swap for real data.
       6) The author section (name, bio, photo) needs your real details.
       7) Educational-content disclaimer in the footer: keep it, and get it checked by someone
          qualified before this goes live paid-traffic — financial-education products get more
-         regulatory attention (FTC/SEC) than a study guide would.
+         regulatory attention (FTC/SEC) than a study guide would. This also now carries the
+         CAN SLIM/O'Neil non-affiliation disclaimer — do not remove it.
+      8) Pricing ($47, value stack $105) is a proposed number matching the 2-bonus structure
+         locked in PRODUCT-BRIEF-FINAL.md — confirm/adjust before launch, then update it
+         consistently across: MM_PRODUCT below, JSON-LD, hero, decision box, recap, FAQ,
+         final CTA.
   -->
 
   <!-- Meta Pixel: paste your own Money and Markets Facebook Pixel script here. Do NOT reuse
@@ -27,23 +38,23 @@
   <script>
     var MM_PRODUCT = {
       content_ids: ['money-and-markets-kit'],
-      content_name: 'Money and Markets Complete Kit',
+      content_name: 'Markets Illustrated: The Leader Screen System',
       content_type: 'product',
-      value: 27,
+      value: 47,
       currency: 'USD'
     };
   </script>
   <!--
     Purchase event should NOT be fired on this page: it cannot confirm a completed
     payment (the buy button goes to an external checkout). Fire
-    fbq('track','Purchase',{value:27,currency:'USD'}) on the post-payment
+    fbq('track','Purchase',{value:47,currency:'USD'}) on the post-payment
     confirmation page/URL instead -- firing it here would report fake conversions to Meta.
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#0F5132">
-  <title>Money and Markets: 7 Parts, Illustrated Guide to Investing</title>
-  <meta name="description" content="Growth stock trading in 7 illustrated parts: Livermore, Wyckoff, CAN SLIM, Minervini's VCP, Weinstein's stages and trading psychology. Understand it, don't just guess. $27, 30-day guarantee.">
+  <meta name="theme-color" content="#2645a0">
+  <title>Markets Illustrated: The Leader Screen System — 7 Illustrated Parts</title>
+  <meta name="description" content="Stop guessing which stocks are leaders. Learn to read the market in 7 illustrated parts -- Livermore, Wyckoff, CAN SLIM, Minervini's VCP, Weinstein's stages and trading psychology, in plain English. $47, 30-day guarantee.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="Money and Markets">
   <link rel="canonical" href="https://www.TU-DOMINIO.com/">
@@ -51,19 +62,19 @@
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Money and Markets">
-  <meta property="og:title" content="Money and Markets | Learn to Invest Visually">
-  <meta property="og:description" content="7 parts on growth stock trading -- Livermore to Minervini -- without the Wall Street jargon.">
+  <meta property="og:title" content="Markets Illustrated | The Leader Screen System">
+  <meta property="og:description" content="7 illustrated parts on growth stock trading -- Livermore to Minervini -- built as a checklist, not a guess.">
   <meta property="og:image" content="https://www.TU-DOMINIO.com/img/cover.jpg">
   <meta property="og:image:width" content="896">
   <meta property="og:image:height" content="1200">
-  <meta property="og:image:alt" content="Money and Markets — Learn to Invest Visually">
+  <meta property="og:image:alt" content="Markets Illustrated — The Leader Screen System">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Money and Markets">
-  <meta name="twitter:description" content="7 parts on growth stock trading -- Livermore to Minervini -- without the Wall Street jargon.">
+  <meta name="twitter:title" content="Markets Illustrated">
+  <meta name="twitter:description" content="7 illustrated parts on growth stock trading -- Livermore to Minervini -- built as a checklist, not a guess.">
   <meta name="twitter:image" content="https://www.TU-DOMINIO.com/img/cover.jpg">
 
   <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
@@ -92,19 +103,19 @@
     ul { list-style: none; }
 
     :root {
-      --primary: #0F5132;
-      --primary-dark: #0A3D26;
-      --primary-light: #E8F5EE;
+      --primary: #2645a0;
+      --primary-dark: #1c3479;
+      --primary-light: #eff4fd;
       --cta: #f97216;
       --cta-hover: #dd5f0a;
-      --accent: #F0B429;
+      --accent: #f7cf49;
       --bg-white: #FFFFFF;
       --bg-page: #FFFFFF;
-      --bg-light: #f2f8f5;
-      --bg-dark: #0B3D2A;
+      --bg-light: #f4f7fd;
+      --bg-dark: #1b3277;
       --text: #101828;
       --text-light: #667085;
-      --border: #dfeee6;
+      --border: #e1e8f4;
       --success: #10B981;
       --guarantee-bg: #F0FDF4;
       --shadow: 0 4px 20px rgba(16, 24, 40, 0.08);
@@ -131,7 +142,7 @@
     .lc[width], .lc[height] { width: 1em; height: 1em; }
 
     .hero {
-      background: linear-gradient(150deg, #1a7a4c 0%, #0F5132 48%, #093a24 100%);
+      background: linear-gradient(150deg, #2f55b5 0%, #2645a0 48%, #1f3c92 100%);
       color: #FFFFFF;
       padding: 48px 14px 68px;
       text-align: center;
@@ -388,7 +399,7 @@
     .faq-answer p { min-height: 0; overflow: hidden; font-size: 16px; line-height: 1.7; color: var(--text-light); margin: 0; padding: 0 24px; transition: padding .32s cubic-bezier(.2, .8, .3, 1); }
     .faq-answer:not([hidden]) p { padding: 20px 24px; }
 
-    .final-cta { background: linear-gradient(135deg, #0B3D2A 0%, #0F5132 100%); color: #FFFFFF; padding: 60px 20px; text-align: center; }
+    .final-cta { background: linear-gradient(135deg, #1b3277 0%, #2645a0 100%); color: #FFFFFF; padding: 60px 20px; text-align: center; }
     .final-cta h2 { color: #FFFFFF; margin-bottom: 24px; }
     .final-cta p { font-size: 18px; max-width: 700px; margin: 0 auto 20px; opacity: 0.95; }
 
@@ -473,7 +484,7 @@
 
     .promo {
       position: sticky; top: 0; z-index: 95;
-      background: linear-gradient(180deg, #1a7a4c 0%, #0F5132 60%, #093a24 100%);
+      background: linear-gradient(180deg, #2f55b5 0%, #2645a0 60%, #1f3c92 100%);
       border-bottom: 1px solid rgba(240, 180, 41, 0.42);
       box-shadow: 0 2px 14px rgba(8, 16, 34, 0.24);
       padding: 9px 16px;
@@ -575,18 +586,18 @@
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-   {"@type":"Product","name":"Money and Markets Complete Kit",
+   {"@type":"Product","name":"Markets Illustrated: The Leader Screen System",
     "description":"Growth stock trading and technical analysis in 7 illustrated parts: speculation fundamentals, supply and demand, stages and structures, CAN SLIM, modern momentum trading, chart reading, and trading psychology. Plus 2 bonuses, in English.",
     "image":"https://www.TU-DOMINIO.com/img/cover.jpg",
     "brand":{"@type":"Brand","name":"Money and Markets"},
-    "offers":{"@type":"Offer","price":"27","priceCurrency":"USD","availability":"https://schema.org/InStock",
+    "offers":{"@type":"Offer","price":"47","priceCurrency":"USD","availability":"https://schema.org/InStock",
               "url":"https://www.TU-DOMINIO.com/checkout",
               "hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":30,"applicableCountry":"US"}}},
    {"@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"How will I receive the material?","acceptedAnswer":{"@type":"Answer","text":"As soon as you complete your purchase you'll get an automatic email with the access link. It's high-resolution PDF, ready to download, print or read on any device."}},
-    {"@type":"Question","name":"Is it a one-off payment or a subscription?","acceptedAnswer":{"@type":"Answer","text":"One-off payment of $27. No installments, no recurring charges. Pay once and the material is yours for good."}},
-    {"@type":"Question","name":"Is this financial advice?","acceptedAnswer":{"@type":"Answer","text":"No. Money and Markets is educational content that explains how investing works. It is not personalized financial, investment, tax or legal advice, and it does not recommend specific stocks or investments."}},
-    {"@type":"Question","name":"Do I need any experience with investing?","acceptedAnswer":{"@type":"Answer","text":"No. This is written for complete beginners. If you've never opened a brokerage account, you can start here."}},
+    {"@type":"Question","name":"Is it a one-off payment or a subscription?","acceptedAnswer":{"@type":"Answer","text":"One-off payment of $47. No installments, no recurring charges. Pay once and the material is yours for good."}},
+    {"@type":"Question","name":"Is this financial advice, or official CAN SLIM material?","acceptedAnswer":{"@type":"Answer","text":"No to both. Markets Illustrated is educational content that explains how growth-stock selection and timing frameworks work. It is not personalized financial, investment, tax or legal advice, and it does not recommend specific stocks. The CAN SLIM framework was developed by William J. O'Neil; this is an independent educational interpretation and is not affiliated with, endorsed by, or sponsored by William O'Neil + Co., IBD, or MarketSurge."}},
+    {"@type":"Question","name":"Do I need any experience with investing?","acceptedAnswer":{"@type":"Answer","text":"You should know the basics -- what a stock and a chart are. This teaches you the system for selecting and timing growth stocks, the part your finance classes usually skip."}},
     {"@type":"Question","name":"Can I print the material?","acceptedAnswer":{"@type":"Answer","text":"Yes. The PDFs are designed in high resolution, ideal for printing, annotating or using as a quick reference."}}]}]}
   </script>
 </head>
@@ -613,15 +624,15 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-mockup">
-        <img src="./img/kit.webp" alt="Money and Markets Complete Kit: Money and Markets Illustrated plus the two bonus books" width="1620" height="971" loading="eager" fetchpriority="high" decoding="async">
+        <img src="./img/kit.webp" alt="Money and Markets Complete Kit: Markets Illustrated plus the two bonus books" width="1620" height="971" loading="eager" fetchpriority="high" decoding="async">
       </div>
       <p class="hero-social">
         <span class="stars" aria-hidden="true" style="font-size:19px;letter-spacing:3px;color:var(--accent)">★★★★★</span><br>
-        <span style="font-size:15px;opacity:.95"><strong>3,200+ readers</strong> already learning with Money and Markets</span>
+        <span style="font-size:15px;opacity:.95"><strong>3,200+ students</strong> already reading the market with Markets Illustrated</span>
       </p>
-      <h1>The Simplest Way to Learn INVESTING <mark>Without the Wall Street Jargon</mark></h1>
-      <p class="subheadline">The illustrated guide for complete beginners who want to actually understand how investing works — not just guess with their money.</p>
-      <a href="#offerta" id="cta-hero" class="btn-cta">I WANT TO INVEST WITH CONFIDENCE</a>
+      <h1>Stop Guessing Which Stocks Are Leaders. <mark>Learn to Read the Market Like a Screen.</mark></h1>
+      <p class="subheadline">The illustrated system for spotting growth stocks before the crowd explains them — built on CAN SLIM, Wyckoff, Darvas, Weinstein and Minervini, in plain English.</p>
+      <a href="#offerta" id="cta-hero" class="btn-cta">I WANT TO READ THE MARKET</a>
       <p class="cta-small-print">
         <svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Secure payment · Instant access · 30-day no-questions guarantee
       </p>
@@ -634,18 +645,18 @@
       <div class="stats-grid">
         <div class="stat-item">
           <div class="icon"><svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg></div>
-          <strong>3,200+ readers</strong>
-          <p>already learning to invest with Money and Markets</p>
+          <strong>3,200+ students</strong>
+          <p>already learning to read the market with Markets Illustrated</p>
         </div>
         <div class="stat-item">
           <div class="icon"><svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></div>
           <strong>94% feel more confident</strong>
-          <p>making investing decisions than before</p>
+          <p>reading a chart and a screen before making a decision</p>
         </div>
         <div class="stat-item">
           <div class="icon"><svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
           <strong>100% plain English</strong>
-          <p>no jargon, no fluff — built for beginners, not professionals</p>
+          <p>no Wall Street jargon — built to think like a desk, not a guru</p>
         </div>
       </div>
     </div>
@@ -667,27 +678,27 @@
 
         <div class="testimonials-scroll" id="amostras-scroll" role="list" data-no-autoplay>
           <article class="testimonial-item amostra-item" role="listitem">
-            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="0" aria-label="Enlarge: Compound interest, illustrated">
-              <img src="./img/page-1.jpg" alt="Compound interest, illustrated" width="768" height="1376" loading="lazy" decoding="async">
-              <span class="amostra-cap">Compound interest, illustrated</span>
+            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="0" aria-label="Enlarge: The CAN SLIM Scorecard, illustrated">
+              <img src="./img/page-1.jpg" alt="The CAN SLIM Scorecard, illustrated" width="768" height="1376" loading="lazy" decoding="async">
+              <span class="amostra-cap">The CAN SLIM Scorecard, illustrated</span>
             </button>
           </article>
           <article class="testimonial-item amostra-item" role="listitem">
-            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="1" aria-label="Enlarge: How the stock market actually works">
-              <img src="./img/page-2.jpg" alt="How the stock market actually works" width="768" height="1376" loading="lazy" decoding="async">
-              <span class="amostra-cap">How the stock market actually works</span>
+            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="1" aria-label="Enlarge: Wyckoff's Four Phases, visualized">
+              <img src="./img/page-2.jpg" alt="Wyckoff's Four Phases, visualized" width="768" height="1376" loading="lazy" decoding="async">
+              <span class="amostra-cap">Wyckoff's Four Phases, visualized</span>
             </button>
           </article>
           <article class="testimonial-item amostra-item" role="listitem">
-            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="2" aria-label="Enlarge: The P/E ratio, explained simply">
-              <img src="./img/page-3.jpg" alt="The P/E ratio, explained simply" width="768" height="1376" loading="lazy" decoding="async">
-              <span class="amostra-cap">The P/E ratio, explained simply</span>
+            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="2" aria-label="Enlarge: The Darvas Box, explained simply">
+              <img src="./img/page-3.jpg" alt="The Darvas Box, explained simply" width="768" height="1376" loading="lazy" decoding="async">
+              <span class="amostra-cap">The Darvas Box, explained simply</span>
             </button>
           </article>
           <article class="testimonial-item amostra-item" role="listitem">
-            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="3" aria-label="Enlarge: Diversification in one page">
-              <img src="./img/page-4.jpg" alt="Diversification in one page" width="768" height="1376" loading="lazy" decoding="async">
-              <span class="amostra-cap">Diversification in one page</span>
+            <button type="button" class="amostra-btn" data-lb="samples" data-lb-index="3" aria-label="Enlarge: Reading volume on a breakout">
+              <img src="./img/page-4.jpg" alt="Reading volume on a breakout" width="768" height="1376" loading="lazy" decoding="async">
+              <span class="amostra-cap">Reading volume on a breakout</span>
             </button>
           </article>
         </div>
@@ -702,7 +713,7 @@
   <!-- TESTIMONIALS -->
   <section class="section section-alt section-snug-top" aria-label="Reader reviews">
     <div class="container">
-      <h2 class="text-center" style="margin-bottom: 32px;">What the 3,200+ Readers Already Using Money and Markets Say:</h2>
+      <h2 class="text-center" style="margin-bottom: 32px;">What the 3,200+ Students Already Using Markets Illustrated Say:</h2>
 
       <div class="testimonials-carousel-wrap" role="region" aria-label="Reviews carousel">
         <button type="button" class="carousel-nav" data-dir="prev" data-target="testimonials-scroll" aria-label="Previous review">
@@ -722,7 +733,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I finally get why starting at 22 vs 32 makes such a difference. The compound interest chapter uses a simple chart instead of a scary formula."</p>
+              <p>"The M chapter finally explained why I kept getting stopped out even when my stock picks were 'right.' I was fighting the market, not reading it."</p>
               <div class="who">Maya T. <span>Austin, TX</span></div>
             </div>
           </article>
@@ -735,7 +746,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I always nodded along when people mentioned the S&P 500 without actually knowing what it was. Now I can explain it to my dad."</p>
+              <p>"I used to just say 'earnings looked good' without knowing what to actually check. Now I can walk through C-A-N-S-L-I-M out loud and it holds up."</p>
               <div class="who">Jordan K. <span>Denver, CO</span></div>
             </div>
           </article>
@@ -748,7 +759,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"The P/E ratio finally makes sense. I used to just see the number on my brokerage app and ignore it completely."</p>
+              <p>"The Darvas Box page made consolidation click instantly. I'd been calling every sideways chart 'basing' without knowing what I was actually looking for."</p>
               <div class="who">Sam R. <span>Chicago, IL</span></div>
             </div>
           </article>
@@ -761,7 +772,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"The ETF vs individual stocks chapter is the reason I stopped trying to pick winners and just bought an index fund instead."</p>
+              <p>"I stopped buying 'cheap' stocks that were actually just weak. The Stage Analysis chapter is the reason I finally understand the difference."</p>
               <div class="who">Priya D. <span>San Francisco, CA</span></div>
             </div>
           </article>
@@ -774,7 +785,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Bonds always felt boring and confusing. The yield explanation with the seesaw diagram made it click in about two minutes."</p>
+              <p>"Volume on the breakout was the missing piece. I'd seen the pattern for months without knowing what was actually supposed to confirm it."</p>
               <div class="who">Marcus L. <span>Atlanta, GA</span></div>
             </div>
           </article>
@@ -787,7 +798,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Reading the chapter on loss aversion basically explained every bad financial decision I've made in the last five years."</p>
+              <p>"The chapter on cutting losses fast is the one I needed a year ago. I finally have a rule instead of a feeling."</p>
               <div class="who">Chloe B. <span>Portland, OR</span></div>
             </div>
           </article>
@@ -800,7 +811,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Nobody at my first job explained the difference between a 401(k) and a Roth IRA. This did it better than HR ever did."</p>
+              <p>"My finance professor covers WACC, not why a stock actually breaks out on volume. This filled in exactly the gap between the two."</p>
               <div class="who">Devon H. <span>Nashville, TN</span></div>
             </div>
           </article>
@@ -813,7 +824,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I kept Googling terms mid-article and losing my train of thought. Having 100 of them explained with a picture next to each one changed that."</p>
+              <p>"I kept Googling 'relative strength' and 'distribution day' mid-chapter and losing my train of thought. Having them explained with a picture next to each one changed that."</p>
               <div class="who">Olivia N. <span>Seattle, WA</span></div>
             </div>
           </article>
@@ -826,7 +837,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"The 'should I sell during a dip' card is basically taped to the inside of my brain now. I check it every time the market drops."</p>
+              <p>"The Anti-Watchlist card is basically taped to the inside of my brain now. I check it before I let myself buy anything."</p>
               <div class="who">Ethan G. <span>Boston, MA</span></div>
             </div>
           </article>
@@ -839,7 +850,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I opened a brokerage account two years ago and never funded it because I had no idea where to start. This was the push I needed."</p>
+              <p>"I'd been staring at chart patterns for a year with zero framework. Now I actually know what I'm looking for before I open a chart."</p>
               <div class="who">Grace M. <span>Phoenix, AZ</span></div>
             </div>
           </article>
@@ -852,7 +863,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Bought this for my daughter for her 18th birthday instead of another gift she'd forget about. She's actually been reading it."</p>
+              <p>"Bought this for my son before his finance internship interview. He actually used the CAN SLIM answer in his second round."</p>
               <div class="who">Karen S. <span>Parent, Minneapolis, MN</span></div>
             </div>
           </article>
@@ -865,7 +876,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"My roommate left this open on the kitchen table and I ended up reading half of it before I even bought my own copy."</p>
+              <p>"My roommate left this open on the kitchen table and I ended up reading the whole M chapter before I bought my own copy."</p>
               <div class="who">Tyler F. <span>Raleigh, NC</span></div>
             </div>
           </article>
@@ -878,7 +889,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"My family never talked about investing growing up, so I felt behind starting in my 30s. This didn't make me feel stupid for not knowing the basics."</p>
+              <p>"Nobody in my program ever explained market regime. I was picking great stocks in a market that was already rolling over."</p>
               <div class="who">Wei C. <span>New York, NY</span></div>
             </div>
           </article>
@@ -891,7 +902,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I went from being too scared to log into my brokerage app to actually understanding what I own and why."</p>
+              <p>"I went from copying setups I saw online to actually being able to explain why I'd take -- or skip -- a trade."</p>
               <div class="who">Brianna W. <span>Charlotte, NC</span></div>
             </div>
           </article>
@@ -904,7 +915,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I have ADHD and financial articles online lose me after two paragraphs. The diagrams here actually kept me reading to the end."</p>
+              <p>"I have ADHD and most trading content loses me after two paragraphs. The illustrated pages actually kept me reading to the end."</p>
               <div class="who">Alex P. <span>San Diego, CA</span></div>
             </div>
           </article>
@@ -917,7 +928,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I run a small shop and always figured investing was for people with way more money than me. Turns out I just needed it explained properly."</p>
+              <p>"I run a small business and always figured this stuff was for people who already worked in finance. Turns out I just needed it explained properly."</p>
               <div class="who">Renee J. <span>New Orleans, LA</span></div>
             </div>
           </article>
@@ -930,7 +941,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Left a finance-adjacent job to become a teacher and realized I understood spreadsheets but not my own portfolio. Ironic, but this fixed it."</p>
+              <p>"Left a finance-adjacent job to become a teacher and realized I understood spreadsheets but never actually knew how to read a chart. Ironic, but this fixed it."</p>
               <div class="who">Daniel O. <span>Columbus, OH</span></div>
             </div>
           </article>
@@ -943,7 +954,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I panic-sold in 2022 and regretted it within six months. The market cycles chapter is basically the conversation I wish someone had had with me first."</p>
+              <p>"I panic-sold in 2022 and regretted it within six months. Stage Analysis is basically the conversation I wish someone had had with me first."</p>
               <div class="who">Samantha V. <span>Houston, TX</span></div>
             </div>
           </article>
@@ -956,7 +967,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Dollar-cost averaging sounded like something only professionals did. Now I've got it set up on autopilot and actually understand why it works."</p>
+              <p>"Position sizing sounded like something only professionals did the math for. Now I actually run the numbers before I enter."</p>
               <div class="who">Isaiah B. <span>Philadelphia, PA</span></div>
             </div>
           </article>
@@ -969,7 +980,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"I'm 58 and started from zero. Nobody made me feel like I was too late or too old for this."</p>
+              <p>"I'm 58 and only started reading charts this year. Nobody made me feel like I was too late or too old for this."</p>
               <div class="who">Linda K. <span>Tampa, FL</span></div>
             </div>
           </article>
@@ -982,7 +993,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Options always sounded like gambling to me. The basics chapter explained the actual mechanics without pushing me to trade them."</p>
+              <p>"I always figured trading was just gambling with extra steps. Seeing the actual selection criteria laid out changed my mind completely."</p>
               <div class="who">Marcus T. <span>Las Vegas, NV</span></div>
             </div>
           </article>
@@ -995,7 +1006,7 @@
                 </div>
                 <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
               </div>
-              <p>"Wish this existed when I graduated college. Would have saved me at least five years of doing nothing with my savings account."</p>
+              <p>"Wish this existed when I graduated. Would have saved me at least two years of trading on vibes instead of a system."</p>
               <div class="who">Natalie R. <span>Salt Lake City, UT</span></div>
             </div>
           </article>
@@ -1012,18 +1023,18 @@
     <div class="container">
       <div class="section-header">
         <span class="eyebrow">The Difference Is Visual</span>
-        <h2>Thousands of readers already made investing simpler by switching:</h2>
+        <h2>Thousands of students already made reading the market simpler by switching:</h2>
       </div>
 
       <div class="comparison-grid">
         <div class="comparison-card bad-card">
           <div class="comparison-label bad">THIS</div>
           <ul class="comparison-bullets bad-list">
-            <li>Wall Street jargon nobody explains</li>
-            <li>Numbers with no context</li>
-            <li>Makes investing feel scary</li>
+            <li>A wall of thresholds with no picture</li>
+            <li>Terms your finance classes never covered</li>
+            <li>Makes reading a chart feel like guessing</li>
           </ul>
-          <img src="./img/bad-page.jpg" alt="Typical finance article: dense text, jargon, no illustrations" width="896" height="1200" loading="lazy" decoding="async">
+          <img src="./img/bad-page.jpg" alt="Typical trading article: dense text, jargon, no illustrations" width="896" height="1200" loading="lazy" decoding="async">
         </div>
 
         <div class="comparison-card good-card">
@@ -1033,7 +1044,7 @@
             <li>Instantly easy to understand</li>
             <li>Visual and intuitive!</li>
           </ul>
-          <img src="./img/page-2.jpg" alt="Money and Markets page: how the stock market works, the same topic, illustrated" width="768" height="1376" loading="lazy" decoding="async">
+          <img src="./img/page-2.jpg" alt="Markets Illustrated page: Wyckoff's Four Phases, the same topic, illustrated" width="768" height="1376" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -1136,21 +1147,21 @@
   <!-- SOLUTION -->
   <section class="section section-alt">
     <div class="container">
-      <h2 class="text-center">What If There Were a Simpler Way?</h2>
+      <h2 class="text-center">What If Reading a Chart Wasn't a Guess?</h2>
 
       <div class="solution-content">
         <p class="text-center">Picture this:</p>
-        <p class="text-center">Instead of re-reading the same article on the stock market five times trying to piece together what a ticker, an index and a dividend actually are...</p>
-        <p class="text-center">...you open <strong>1 illustrated visual map</strong> that shows you how it all connects, in one glance.</p>
+        <p class="text-center">Instead of re-reading the same paragraph on relative strength five times trying to figure out if a breakout is actually real...</p>
+        <p class="text-center">...you open <strong>1 illustrated page</strong> that shows you exactly what to check, in one glance.</p>
 
         <div class="solution-image">
-          <img src="./img/page-2.jpg" alt="Sample page: how the stock market works, explained visually" width="768" height="1376" loading="lazy" decoding="async">
+          <img src="./img/page-2.jpg" alt="Sample page: Wyckoff's Four Phases, explained visually" width="768" height="1376" loading="lazy" decoding="async">
         </div>
 
-        <p class="text-center">Your brain <strong>sees the whole idea at once</strong>. The connections form on their own. And you finally understand why a number matters, instead of scrolling past it without knowing what it means.</p>
+        <p class="text-center">Your brain <strong>sees the whole mechanism at once</strong>. The connections form on their own. And you finally know why a threshold matters, instead of copying a setup you saw online without knowing why it worked.</p>
         <p class="text-center" style="font-size: 22px; font-weight: 700; margin-top: 40px;">That's exactly what the Money and Markets Kit does.</p>
-        <p class="text-center">It isn't &ldquo;just another PDF&rdquo;. It's the system that organizes everything you already half-know (and everything you don't yet) into <strong>7 illustrated parts</strong>, built so your brain <strong>understands instead of guesses</strong>.</p>
-        <p class="text-center">Because once you understand the basics, <strong>everything starts to make sense</strong>.</p>
+        <p class="text-center">It isn't &ldquo;just another PDF&rdquo;. It's the system that organizes everything you already half-know (and everything your classes skipped) into <strong>7 illustrated parts</strong>, built so your brain <strong>understands instead of guesses</strong>.</p>
+        <p class="text-center">Because once you can see the mechanism, <strong>the checklist starts running itself</strong>.</p>
       </div>
     </div>
   </section>
@@ -1190,34 +1201,34 @@
 
       <div class="bonus-grid">
         <div class="bonus-item-with-image">
-          <div class="bonus-mockup"><img src="./img/bonus-1.webp" alt="Wall Street Terms Explained: 100 terms explained with illustrations" width="1055" height="1491" loading="lazy" decoding="async"></div>
+          <div class="bonus-mockup"><img src="./img/bonus-1.webp" alt="The Language of the Market: trading and market terms explained with illustrations" width="1055" height="1491" loading="lazy" decoding="async"></div>
           <div class="bonus-text">
-            <h3>BONUS 1: &ldquo;Wall Street Terms Explained: 100 Terms Explained with Illustrations&rdquo;</h3>
-            <p class="value">Individual value: $13</p>
-            <p>Every term with its own drawing, its &ldquo;why&rdquo;, and a plain-English example. Stop nodding along and start understanding what every word in investing actually means.</p>
+            <h3>BONUS 1: &ldquo;The Language of the Market: Terms Explained with Illustrations&rdquo;</h3>
+            <p class="value">Individual value: $19</p>
+            <p>Every term with its own drawing, its &ldquo;why&rdquo;, and a plain-English example — from float and relative strength to distribution days and accumulation. Stop nodding along and start knowing exactly what a term means the moment you read it.</p>
             <div class="bonus-sfoglia">
-              <figure><img src="./img/bonus1-sample-1.jpg" alt="Sample page from the terms glossary" width="768" height="1376" loading="lazy" decoding="async"><figcaption>Every term with its definition and its drawing</figcaption></figure>
-              <figure><img src="./img/bonus1-sample-2.jpg" alt="Comparison of commonly confused terms" width="768" height="1376" loading="lazy" decoding="async"><figcaption>Stocks vs. shares: the pair everyone confuses</figcaption></figure>
+              <figure><img src="./img/bonus1-sample-1.jpg" alt="Sample page from the market terms glossary" width="768" height="1376" loading="lazy" decoding="async"><figcaption>Every term with its definition and its drawing</figcaption></figure>
+              <figure><img src="./img/bonus1-sample-2.jpg" alt="Comparison of commonly confused terms" width="768" height="1376" loading="lazy" decoding="async"><figcaption>Accumulation vs. distribution: the pair everyone confuses</figcaption></figure>
             </div>
           </div>
         </div>
 
         <div class="bonus-item-with-image">
-          <div class="bonus-mockup"><img src="./img/bonus-2.webp" alt="Quick Decision Cards: 30 cards for the situations you'll actually face" width="1055" height="1491" loading="lazy" decoding="async"></div>
+          <div class="bonus-mockup"><img src="./img/bonus-2.webp" alt="Rapid Market Decision Cards: 30 cards for the moments you'll actually face" width="1055" height="1491" loading="lazy" decoding="async"></div>
           <div class="bonus-text">
-            <h3>BONUS 2: &ldquo;Quick Decision Cards: 30 Cards for the Situations You'll Actually Face&rdquo;</h3>
-            <p class="value">Individual value: $13</p>
+            <h3>BONUS 2: &ldquo;Rapid Market Decision Cards: 30 Cards for the Moments You'll Actually Face&rdquo;</h3>
+            <p class="value">Individual value: $19</p>
             <ul>
-              <li>The Market Dropped</li>
-              <li>Starting a New Job</li>
-              <li>Portfolio Basics</li>
-              <li>Bonds &amp; Rates</li>
-              <li>Taxes &amp; Accounts</li>
+              <li>The CAN SLIM Scorecard</li>
+              <li>The Anti-Watchlist (when NOT to buy)</li>
+              <li>Reading Market Direction (M)</li>
+              <li>Position Sizing Rules</li>
+              <li>Common Breakout Mistakes</li>
             </ul>
-            <p style="margin-top: 16px;">These 5 categories cover the majority of decisions a beginner actually faces. Read the situation, check the card, know what to consider before you act.</p>
+            <p style="margin-top: 16px;">These 5 categories cover the decisions that actually cost students money. Read the situation, check the card, know what to verify before you act.</p>
             <div class="bonus-sfoglia">
-              <figure><img src="./img/bonus2-sample-1.jpg" alt="Quick decision card" width="768" height="1376" loading="lazy" decoding="async"><figcaption>A real situation, and what to think through</figcaption></figure>
-              <figure><img src="./img/bonus2-sample-2.jpg" alt="Comparison table of account types" width="768" height="1376" loading="lazy" decoding="async"><figcaption>Account types, all in one table</figcaption></figure>
+              <figure><img src="./img/bonus2-sample-1.jpg" alt="Rapid decision card" width="768" height="1376" loading="lazy" decoding="async"><figcaption>A real setup, and what to check before you act</figcaption></figure>
+              <figure><img src="./img/bonus2-sample-2.jpg" alt="Scorecard summary table" width="768" height="1376" loading="lazy" decoding="async"><figcaption>The full CAN SLIM scorecard, all in one table</figcaption></figure>
             </div>
           </div>
         </div>
@@ -1230,20 +1241,20 @@
         <h3 class="db-title">Money and Markets Kit</h3>
 
         <ul class="db-checklist">
-          <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>7 Illustrated Parts on Investing<span class="db-price-val">$39</span></li>
-          <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Bonus 1: Wall Street Terms Explained, 100 Terms<span class="db-price-val">$13</span></li>
-          <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Bonus 2: Quick Decision Cards, 30 Cards<span class="db-price-val">$13</span></li>
+          <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Markets Illustrated: 7 Parts, The Leader Screen System<span class="db-price-val">$67</span></li>
+          <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Bonus 1: The Language of the Market<span class="db-price-val">$19</span></li>
+          <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Bonus 2: Rapid Market Decision Cards, 30 Cards<span class="db-price-val">$19</span></li>
           <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>High-resolution PDF for printing<span class="db-price-val">Included</span></li>
         </ul>
 
         <div class="db-anchoring">
-          <p class="db-old-price">Total value: $65</p>
+          <p class="db-old-price">Total value: $105</p>
           <p class="db-new-price-label">Today only:</p>
-          <p class="db-new-price">$27</p>
-          <span class="db-discount-badge">SAVE $38</span>
+          <p class="db-new-price">$47</p>
+          <span class="db-discount-badge">SAVE $58</span>
         </div>
 
-        <a href="#offerta" data-checkout class="db-cta">YES, I WANT THE COMPLETE KIT FOR $27</a>
+        <a href="#offerta" data-checkout class="db-cta">YES, I WANT THE COMPLETE KIT FOR $47</a>
 
         <div class="db-trust">
           <span class="db-trust-item"><span class="db-trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>Secure checkout</span>
@@ -1263,27 +1274,31 @@
 
       <div class="paraquem-grid">
         <div class="paraquem-card">
-          <img class="paraquem-foto" src="./img/persona-new-earner.webp" alt="Someone starting their first job, opening a brokerage account" loading="lazy" width="1600" height="900">
+          <img class="paraquem-foto" src="./img/persona-finance-student.webp" alt="A finance or business student studying charts alongside coursework" loading="lazy" width="1600" height="900">
           <div class="paraquem-info">
-            <h3>The New Earner</h3>
-            <p>You just started earning real money and opened a 401(k) or a brokerage account without really understanding what you signed up for. You want the basics explained once, properly, before you make your first real decision.</p>
+            <h3>The Finance Student</h3>
+            <p>Your classes cover statements, WACC and DCF, but never why a stock actually breaks out on volume. You want the gap between classroom finance and desk-level reading closed, properly, before your next interview or your next trade.</p>
           </div>
         </div>
         <div class="paraquem-card">
-          <img class="paraquem-foto" src="./img/persona-late-starter.webp" alt="Someone in their 40s or 50s starting to invest for the first time" loading="lazy" width="1600" height="900">
+          <img class="paraquem-foto" src="./img/persona-self-taught.webp" alt="Someone reviewing charts without a clear system" loading="lazy" width="1600" height="900">
           <div class="paraquem-info">
-            <h3>The Late Starter</h3>
-            <p>You've got savings sitting in a bank account earning almost nothing, and you've felt behind for years. Nobody should make you feel stupid for not knowing this yet — you just need it explained without the jargon.</p>
+            <h3>The Self-Taught Trader</h3>
+            <p>You've been trading for a while, copying setups you saw online without fully knowing why they worked or when to sit out. You want a real system — thresholds, not vibes — and the discipline to know when NOT to trade.</p>
           </div>
         </div>
         <div class="paraquem-card">
-          <img class="paraquem-foto" src="./img/persona-self-taught.webp" alt="Someone who already trades on an app but wants to understand the fundamentals" loading="lazy" width="1600" height="900">
+          <img class="paraquem-foto" src="./img/persona-aspiring-analyst.webp" alt="An early-career analyst preparing for a technical interview" loading="lazy" width="1600" height="900">
           <div class="paraquem-info">
-            <h3>The Self-Taught Investor</h3>
-            <p>You already have an app on your phone and you've bought a few things, but you couldn't fully explain why. You want real understanding, not another 60-second video that leaves you more confused.</p>
+            <h3>The Aspiring Analyst</h3>
+            <p>You want to sound like someone who belongs on a desk — able to explain how you'd screen a growth name, not just recite definitions. You want real understanding, not another 60-second video that leaves you more confused.</p>
           </div>
         </div>
       </div>
+
+      <p class="text-center" style="max-width:700px;margin:28px auto 0;color:var(--text-light);font-size:15px;">
+        <strong>This is not for you if</strong> you're looking for daily signals, options lotto plays, or a promise of guaranteed returns. Markets Illustrated teaches a selection and timing framework — not a shortcut.
+      </p>
     </div>
   </section>
 
@@ -1294,15 +1309,15 @@
 
       <div class="author-content">
         <div class="author-image">
-          <img src="./img/author.webp" alt="Founder of Money and Markets" width="1024" height="1024" loading="lazy" decoding="async">
+          <img src="./img/author.webp" alt="John Williams, Founder of Money and Markets" width="1024" height="1024" loading="lazy" decoding="async">
         </div>
         <div class="author-bio">
-          <h3>[Your name]</h3>
-          <h4>Financial analyst &middot; Founder of Money and Markets</h4>
-          <p>Financial analyst and founder of Money and Markets, an educational platform created to help beginners make sense of investing through a simpler, more visual approach.</p>
-          <p>With a method built around <strong>visual learning and plain-English explanations</strong>, I turn confusing terms, ratios and market mechanics into clear diagrams and practical examples — so you can finally understand what once felt intimidating.</p>
-          <p>This material wasn't created simply to sell another finance guide. It was created <strong>because I've seen how many smart people avoid investing entirely, not because they can't do it, but because nobody ever explained it to them properly</strong>.</p>
-          <p>And I've seen that when someone <strong>sees how the market actually works</strong>, rather than just being told to "trust the process," everything changes.</p>
+          <h3>John Williams</h3>
+          <h4>Economist &middot; Financial Markets Educator &middot; Founder</h4>
+          <p>Economist and financial markets educator, focused on helping people make sense of complex economic and financial concepts through a simpler, more practical approach.</p>
+          <p>With a method built around <strong>clear thinking, visual learning and practical understanding</strong>, I transform complicated financial concepts, market dynamics, economic principles and investment ideas into clear explanations, frameworks and practical examples, so you can finally understand what once seemed impossible.</p>
+          <p>This material wasn't created simply to sell another finance book. It was created <strong>because I know how overwhelming financial markets can feel when you're taught to memorize formulas, ratios and theories instead of understanding what actually drives them</strong>.</p>
+          <p>And I discovered that when your brain <strong>sees how an idea works</strong>, rather than simply reading about it, everything changes.</p>
         </div>
       </div>
     </div>
@@ -1314,17 +1329,17 @@
       <h2 class="text-center">To Recap: Here's What You Get Today</h2>
 
       <ul class="recap-list">
-        <li>7 Illustrated Parts on Investing: from your first dollar to advanced topics, all visual and organized</li>
-        <li>Bonus 1: &ldquo;Wall Street Terms Explained: 100 Terms Explained with Illustrations&rdquo; (worth $13)</li>
-        <li>Bonus 2: &ldquo;Quick Decision Cards: 30 Cards for the Situations You'll Actually Face&rdquo; (worth $13)</li>
+        <li>Markets Illustrated: 7 illustrated parts, from speculation fundamentals to trading psychology</li>
+        <li>Bonus 1: &ldquo;The Language of the Market: Terms Explained with Illustrations&rdquo; (worth $19)</li>
+        <li>Bonus 2: &ldquo;Rapid Market Decision Cards: 30 Cards for the Moments You'll Actually Face&rdquo; (worth $19)</li>
         <li>Instant access: everything arrives by automatic email in under 2 minutes</li>
         <li>30-day no-questions guarantee: try it risk-free</li>
         <li>High-resolution PDF: print it, annotate it, take it anywhere</li>
       </ul>
 
       <div class="price-recap">
-        <p class="old-price">$65</p>
-        <p class="new-price">$27</p>
+        <p class="old-price">$105</p>
+        <p class="new-price">$47</p>
       </div>
 
       <div style="text-align: center;">
@@ -1339,7 +1354,7 @@
       <div class="guarantee-box">
         <div class="icon"><svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
         <h3>The &ldquo;Try It Risk-Free&rdquo; Guarantee: 30 Days</h3>
-        <p>I understand you've probably already tried other ways of "figuring out investing" that didn't stick.</p>
+        <p>I understand you've probably already tried other ways of "figuring out how to read a chart" that didn't stick.</p>
         <p>That's why I'm giving you <strong>30 full days</strong> to try the Money and Markets Kit.</p>
         <p>If within that time you feel the material didn't help, wasn't useful, or simply wasn't what you expected, <strong>I'll refund 100% of what you paid</strong>.</p>
         <p>No questions asked. No small print. No hassle.</p>
@@ -1360,15 +1375,19 @@
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq2">Is it a one-off payment or a subscription?</button>
-          <div class="faq-answer" id="faq2" hidden><p>One-off payment of $27. No installments, no recurring charges, no surprises. Pay once and the material is yours for good.</p></div>
+          <div class="faq-answer" id="faq2" hidden><p>One-off payment of $47. No installments, no recurring charges, no surprises. Pay once and the material is yours for good.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false" aria-controls="faq3">Is this financial advice?</button>
-          <div class="faq-answer" id="faq3" hidden><p>No. Money and Markets is educational content that explains how investing works, in plain English. It is not personalized financial, investment, tax or legal advice, and it does not recommend specific stocks or investments. Always consider talking to a licensed financial advisor for advice specific to your situation.</p></div>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3">Is this financial advice, or official CAN SLIM material?</button>
+          <div class="faq-answer" id="faq3" hidden><p>Neither. Markets Illustrated is educational content that explains how growth-stock selection and timing frameworks work, in plain English. It is not personalized financial, investment, tax or legal advice, and it does not recommend specific stocks. The CAN SLIM framework was developed by William J. O'Neil; this is an independent educational interpretation and is not affiliated with, endorsed by, or sponsored by William O'Neil + Co., IBD, or MarketSurge. Always consider talking to a licensed financial advisor for advice specific to your situation.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq4">Do I need any experience with investing or finance?</button>
-          <div class="faq-answer" id="faq4" hidden><p>No. This is written for complete beginners, whatever your age or background. If you've never opened a brokerage account, you can start here. If you already invest but never quite understood why, this fills in the gaps.</p></div>
+          <div class="faq-answer" id="faq4" hidden><p>You should know the basics — what a stock is, what a chart shows. This isn't a "what is a brokerage account" guide; it teaches the system for selecting and timing growth stocks, the part most finance classes and beginner guides skip.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq6">Does this guarantee I'll make money?</button>
+          <div class="faq-answer" id="faq6" hidden><p>No, and be wary of anything that claims it does. This teaches you what to look at, in what order, and when not to act — a process, not a promise. Investing involves risk, including loss of principal.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq5">Can I print the material?</button>
@@ -1383,23 +1402,23 @@
     <div class="container">
       <h2>One Last Thing Before You Decide...</h2>
 
-      <p>Investing doesn't have to feel like a foreign language.</p>
-      <p>You don't have to drive yourself mad trying to decode 100 Wall Street terms that make no sense.</p>
-      <p>You don't have to keep leaving your money in a savings account out of fear of getting it wrong.</p>
-      <p>And you definitely <strong>shouldn't stay on the sidelines because nobody ever explained the basics properly</strong>.</p>
+      <p>Reading a chart doesn't have to feel like a guess.</p>
+      <p>You don't have to keep copying setups you saw online without knowing why they worked.</p>
+      <p>You don't have to freeze the moment someone asks you to explain your thesis on a stock.</p>
+      <p>And you definitely <strong>shouldn't stay on the sidelines because nobody ever explained the system properly</strong>.</p>
       <p style="font-size: 22px; font-weight: 700; margin-top: 32px;">There's a simpler way. And it's one click away.</p>
-      <p>Over 3,200 readers have already chosen to make investing simpler with Money and Markets.</p>
+      <p>Over 3,200 students have already chosen to read the market with Markets Illustrated.</p>
       <p><strong>Now it's your turn.</strong></p>
 
       <div class="cta-summary">
         <ul>
-          <li>One-off cost: $27</li>
+          <li>One-off cost: $47</li>
           <li>Guarantee: 30 days, no questions asked</li>
           <li>Access: instant, by email</li>
         </ul>
       </div>
 
-      <a href="#offerta" class="btn-cta">I WANT THE COMPLETE KIT FOR $27</a>
+      <a href="#offerta" class="btn-cta">I WANT THE COMPLETE KIT FOR $47</a>
 
       <p class="cta-small-print" style="margin-top: 24px;">
         <svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg> You'll receive the material by email in under 2 minutes
@@ -1411,7 +1430,7 @@
   <footer class="footer">
     <div class="container">
       <p>© 2026 Money and Markets · All rights reserved · <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: underline; margin-left: 8px;">Refund Policy</a></p>
-      <p class="disclaimer">Money and Markets is an independent educational resource. This material is for educational purposes only and does not constitute personalized financial, investment, tax or legal advice. Investing involves risk, including possible loss of principal — past performance and illustrative examples are not guarantees of future results. Learning outcomes depend on each reader. [Add your contact details / business registration / address here if required in your jurisdiction.]</p>
+      <p class="disclaimer">Money and Markets is an independent educational resource. This material is for educational purposes only and does not constitute personalized financial, investment, tax or legal advice, and does not recommend specific securities. Investing involves risk, including possible loss of principal — past performance and illustrative examples are not guarantees of future results. The CAN SLIM framework was developed by William J. O'Neil; Markets Illustrated is an independent educational interpretation and is not affiliated with, endorsed by, or sponsored by William O'Neil + Co., IBD, or MarketSurge. Learning outcomes depend on each reader. [Add your contact details / business registration / address here if required in your jurisdiction.]</p>
     </div>
   </footer>
 
@@ -1723,22 +1742,22 @@
       var GALLERIES = {
         samples: {
           pages: [
-            ['./img/page-1.jpg', 'Vectors in a page'],
-            ['./img/page-2.jpg', "Newton's Laws, illustrated"],
-            ['./img/page-3.jpg', 'How a circuit works'],
-            ['./img/page-4.jpg', 'Sound, light and waves']
+            ['./img/page-1.jpg', 'The CAN SLIM Scorecard, illustrated'],
+            ['./img/page-2.jpg', "Wyckoff's Four Phases, visualized"],
+            ['./img/page-3.jpg', 'The Darvas Box, explained simply'],
+            ['./img/page-4.jpg', 'Reading volume on a breakout']
           ]
         },
         bonus1: {
           pages: [
-            ['./img/bonus1-sample-1.jpg', 'Every formula with its definition and its drawing'],
-            ['./img/bonus1-sample-2.jpg', 'Weight vs. mass: the pair everyone confuses']
+            ['./img/bonus1-sample-1.jpg', 'Every term with its definition and its drawing'],
+            ['./img/bonus1-sample-2.jpg', 'Accumulation vs. distribution: the pair everyone confuses']
           ]
         },
         bonus2: {
           pages: [
-            ['./img/bonus2-sample-1.jpg', 'Questions to cover and test yourself with'],
-            ['./img/bonus2-sample-2.jpg', 'The key formulas, all in one table']
+            ['./img/bonus2-sample-1.jpg', 'A real setup, and what to check before you act'],
+            ['./img/bonus2-sample-2.jpg', 'The full CAN SLIM scorecard, all in one table']
           ]
         }
       };
