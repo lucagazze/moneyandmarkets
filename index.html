@@ -53,7 +53,7 @@
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#2645a0">
+  <meta name="theme-color" content="#0b1220">
   <title>Markets Illustrated: The Leader Screen System — 7 Illustrated Parts</title>
   <meta name="description" content="Stop guessing which stocks are leaders. Learn to read the market in 7 illustrated parts -- Livermore, Wyckoff, CAN SLIM, Minervini's VCP, Weinstein's stages and trading psychology, in plain English. $47, 30-day guarantee.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -81,7 +81,7 @@
   <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Analytics: add Google Tag Manager / Microsoft Clarity with your own IDs here -->
 
@@ -104,26 +104,29 @@
     ul { list-style: none; }
 
     :root {
-      --primary: #2645a0;
-      --primary-dark: #1c3479;
-      --primary-light: #eff4fd;
-      --cta: #f97216;
-      --cta-hover: #dd5f0a;
-      --accent: #f7cf49;
+      /* Executive finance palette: deep navy/charcoal + brass gold + market-green CTA */
+      --primary: #16233d;
+      --primary-dark: #0b1220;
+      --primary-light: #eef1f6;
+      --cta: #15703f;
+      --cta-hover: #0f5230;
+      --accent: #c9a227;
       --bg-white: #FFFFFF;
       --bg-page: #FFFFFF;
-      --bg-light: #f4f7fd;
-      --bg-dark: #1b3277;
+      --bg-light: #f4f6f9;
+      --bg-dark: #0b1220;
       --text: #101828;
       --text-light: #667085;
-      --border: #e1e8f4;
-      --success: #10B981;
+      --border: #e2e6ed;
+      --success: #15703f;
       --guarantee-bg: #F0FDF4;
       --shadow: 0 4px 20px rgba(16, 24, 40, 0.08);
-      --shadow-cta: 0 6px 22px rgba(249, 114, 22, 0.42);
+      --shadow-cta: 0 6px 22px rgba(21, 112, 63, 0.35);
+      --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
     }
 
     h1, h2, h3, h4 { font-weight: 800; line-height: 1.2; }
+    h1, h2, .hero h1, .final-cta h2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.01em; }
     h1 { font-size: 32px; color: #FFFFFF; }
     h2 { font-size: 28px; color: var(--text); margin-bottom: 16px; }
     h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
@@ -143,7 +146,7 @@
     .lc[width], .lc[height] { width: 1em; height: 1em; }
 
     .hero {
-      background: linear-gradient(150deg, #2f55b5 0%, #2645a0 48%, #1f3c92 100%);
+      background: linear-gradient(150deg, #1c2c4d 0%, #0f1a30 55%, #070c18 100%);
       color: #FFFFFF;
       padding: 48px 14px 68px;
       text-align: center;
@@ -161,8 +164,8 @@
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(720px 400px at 80% -10%, rgba(240, 180, 41, .13), transparent 62%),
-        radial-gradient(560px 340px at 5% 105%, rgba(249, 114, 22, .13), transparent 66%);
+        radial-gradient(720px 400px at 80% -10%, rgba(201, 162, 39, .16), transparent 62%),
+        radial-gradient(560px 340px at 5% 105%, rgba(21, 112, 63, .14), transparent 66%);
       pointer-events: none;
     }
     .hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
@@ -175,7 +178,7 @@
     .hero h1 mark {
       background: transparent; color: var(--accent); padding: 0;
       text-decoration: underline;
-      text-decoration-color: rgba(240, 180, 41, .38);
+      text-decoration-color: rgba(201, 162, 39, .45);
       text-decoration-thickness: 3px; text-underline-offset: 6px;
     }
     .hero .subheadline { font-size: 18px; opacity: 0.95; margin-bottom: 32px; line-height: 1.6; }
@@ -195,7 +198,7 @@
       transition: all 0.3s ease; box-shadow: var(--shadow-cta); border: none;
       text-align: center; width: 100%; max-width: 480px; margin: 0 auto; min-height: 64px;
     }
-    .btn-cta:hover { background: var(--cta-hover); transform: scale(1.02); box-shadow: 0 6px 25px rgba(249, 114, 22, 0.5); }
+    .btn-cta:hover { background: var(--cta-hover); transform: scale(1.02); box-shadow: 0 6px 25px rgba(21, 112, 63, 0.45); }
     .btn-cta:active { transform: scale(0.98); }
 
     .cta-small-print { font-size: 13px; opacity: 0.85; margin-top: 16px; line-height: 1.6; }
@@ -286,9 +289,9 @@
       display: block; width: 100%; background: var(--cta); color: #FFFFFF;
       font-size: 17px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
       padding: 20px 24px; border-radius: 10px; border: none; cursor: pointer; text-align: center;
-      transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(249, 114, 22, 0.4); margin-top: 20px; line-height: 1.3;
+      transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(21, 112, 63, 0.35); margin-top: 20px; line-height: 1.3;
     }
-    .db-cta:hover { background: var(--cta-hover); transform: scale(1.02); box-shadow: 0 6px 24px rgba(249, 114, 22, 0.5); }
+    .db-cta:hover { background: var(--cta-hover); transform: scale(1.02); box-shadow: 0 6px 24px rgba(21, 112, 63, 0.45); }
     .db-cta:active { transform: scale(0.98); }
 
     .db-trust { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
@@ -400,7 +403,7 @@
     .faq-answer p { min-height: 0; overflow: hidden; font-size: 16px; line-height: 1.7; color: var(--text-light); margin: 0; padding: 0 24px; transition: padding .32s cubic-bezier(.2, .8, .3, 1); }
     .faq-answer:not([hidden]) p { padding: 20px 24px; }
 
-    .final-cta { background: linear-gradient(135deg, #1b3277 0%, #2645a0 100%); color: #FFFFFF; padding: 60px 20px; text-align: center; }
+    .final-cta { background: linear-gradient(135deg, #0b1220 0%, #16233d 100%); color: #FFFFFF; padding: 60px 20px; text-align: center; }
     .final-cta h2 { color: #FFFFFF; margin-bottom: 24px; }
     .final-cta p { font-size: 18px; max-width: 700px; margin: 0 auto 20px; opacity: 0.95; }
 
@@ -485,8 +488,8 @@
 
     .promo {
       position: sticky; top: 0; z-index: 95;
-      background: linear-gradient(180deg, #2f55b5 0%, #2645a0 60%, #1f3c92 100%);
-      border-bottom: 1px solid rgba(240, 180, 41, 0.42);
+      background: linear-gradient(180deg, #1c2c4d 0%, #0f1a30 60%, #070c18 100%);
+      border-bottom: 1px solid rgba(201, 162, 39, 0.45);
       box-shadow: 0 2px 14px rgba(8, 16, 34, 0.24);
       padding: 9px 16px;
     }
@@ -494,9 +497,9 @@
     .promo-txt { display: inline-flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255, 255, 255, 0.92); }
     .promo-txt::before { content: ""; flex: 0 0 auto; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: promoPulse 2.6s ease-out infinite; }
     @keyframes promoPulse {
-      0%   { box-shadow: 0 0 0 0 rgba(240, 180, 41, 0.55); }
-      70%  { box-shadow: 0 0 0 9px rgba(240, 180, 41, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(240, 180, 41, 0); }
+      0%   { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.55); }
+      70%  { box-shadow: 0 0 0 9px rgba(201, 162, 39, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0); }
     }
     .promo-time { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: rgba(255, 255, 255, 0.62); }
     .promo-clock { font-size: 14px; font-weight: 700; letter-spacing: 0.2px; line-height: 1.2; color: var(--accent); background: rgba(0, 0, 0, 0.26); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 7px; padding: 4px 9px; }
@@ -756,7 +759,7 @@
                   <div class="tst-avatar" style="background:var(--cta)">M</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"The M chapter finally explained why I kept getting stopped out even when my stock picks were 'right.' I was fighting the market, not reading it."</p>
               <div class="who">Maya T. <span>Austin, TX</span></div>
@@ -769,7 +772,7 @@
                   <div class="tst-avatar" style="background:var(--primary)">J</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I used to just say 'earnings looked good' without knowing what to actually check. Now I can walk through C-A-N-S-L-I-M out loud and it holds up."</p>
               <div class="who">Jordan K. <span>Denver, CO</span></div>
@@ -782,7 +785,7 @@
                   <div class="tst-avatar" style="background:var(--success)">S</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"The Darvas Box page made consolidation click instantly. I'd been calling every sideways chart 'basing' without knowing what I was actually looking for."</p>
               <div class="who">Sam R. <span>Chicago, IL</span></div>
@@ -795,7 +798,7 @@
                   <div class="tst-avatar" style="background:var(--primary-dark)">P</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I stopped buying 'cheap' stocks that were actually just weak. The Stage Analysis chapter is the reason I finally understand the difference."</p>
               <div class="who">Priya D. <span>San Francisco, CA</span></div>
@@ -808,7 +811,7 @@
                   <div class="tst-avatar" style="background:var(--cta)">M</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"Volume on the breakout was the missing piece. I'd seen the pattern for months without knowing what was actually supposed to confirm it."</p>
               <div class="who">Marcus L. <span>Atlanta, GA</span></div>
@@ -821,7 +824,7 @@
                   <div class="tst-avatar" style="background:var(--primary)">C</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"The chapter on cutting losses fast is the one I needed a year ago. I finally have a rule instead of a feeling."</p>
               <div class="who">Chloe B. <span>Portland, OR</span></div>
@@ -834,7 +837,7 @@
                   <div class="tst-avatar" style="background:var(--success)">D</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"My finance professor covers WACC, not why a stock actually breaks out on volume. This filled in exactly the gap between the two."</p>
               <div class="who">Devon H. <span>Nashville, TN</span></div>
@@ -847,7 +850,7 @@
                   <div class="tst-avatar" style="background:var(--primary-dark)">O</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I kept Googling 'relative strength' and 'distribution day' mid-chapter and losing my train of thought. Having them explained with a picture next to each one changed that."</p>
               <div class="who">Olivia N. <span>Seattle, WA</span></div>
@@ -860,7 +863,7 @@
                   <div class="tst-avatar" style="background:var(--cta)">E</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"The Anti-Watchlist card is basically taped to the inside of my brain now. I check it before I let myself buy anything."</p>
               <div class="who">Ethan G. <span>Boston, MA</span></div>
@@ -873,7 +876,7 @@
                   <div class="tst-avatar" style="background:var(--primary)">G</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I'd been staring at chart patterns for a year with zero framework. Now I actually know what I'm looking for before I open a chart."</p>
               <div class="who">Grace M. <span>Phoenix, AZ</span></div>
@@ -886,7 +889,7 @@
                   <div class="tst-avatar" style="background:var(--success)">K</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"Bought this for my son before his finance internship interview. He actually used the CAN SLIM answer in his second round."</p>
               <div class="who">Karen S. <span>Parent, Minneapolis, MN</span></div>
@@ -899,7 +902,7 @@
                   <div class="tst-avatar" style="background:var(--primary-dark)">T</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"My roommate left this open on the kitchen table and I ended up reading the whole M chapter before I bought my own copy."</p>
               <div class="who">Tyler F. <span>Raleigh, NC</span></div>
@@ -912,7 +915,7 @@
                   <div class="tst-avatar" style="background:var(--cta)">W</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"Nobody in my program ever explained market regime. I was picking great stocks in a market that was already rolling over."</p>
               <div class="who">Wei C. <span>New York, NY</span></div>
@@ -925,7 +928,7 @@
                   <div class="tst-avatar" style="background:var(--primary)">B</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I went from copying setups I saw online to actually being able to explain why I'd take -- or skip -- a trade."</p>
               <div class="who">Brianna W. <span>Charlotte, NC</span></div>
@@ -938,7 +941,7 @@
                   <div class="tst-avatar" style="background:var(--success)">A</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I have ADHD and most trading content loses me after two paragraphs. The illustrated pages actually kept me reading to the end."</p>
               <div class="who">Alex P. <span>San Diego, CA</span></div>
@@ -951,7 +954,7 @@
                   <div class="tst-avatar" style="background:var(--primary-dark)">R</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I run a small business and always figured this stuff was for people who already worked in finance. Turns out I just needed it explained properly."</p>
               <div class="who">Renee J. <span>New Orleans, LA</span></div>
@@ -964,7 +967,7 @@
                   <div class="tst-avatar" style="background:var(--cta)">D</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"Left a finance-adjacent job to become a teacher and realized I understood spreadsheets but never actually knew how to read a chart. Ironic, but this fixed it."</p>
               <div class="who">Daniel O. <span>Columbus, OH</span></div>
@@ -977,7 +980,7 @@
                   <div class="tst-avatar" style="background:var(--primary)">S</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I panic-sold in 2022 and regretted it within six months. Stage Analysis is basically the conversation I wish someone had had with me first."</p>
               <div class="who">Samantha V. <span>Houston, TX</span></div>
@@ -990,7 +993,7 @@
                   <div class="tst-avatar" style="background:var(--success)">I</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"Position sizing sounded like something only professionals did the math for. Now I actually run the numbers before I enter."</p>
               <div class="who">Isaiah B. <span>Philadelphia, PA</span></div>
@@ -1003,7 +1006,7 @@
                   <div class="tst-avatar" style="background:var(--primary-dark)">L</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I'm 58 and only started reading charts this year. Nobody made me feel like I was too late or too old for this."</p>
               <div class="who">Linda K. <span>Tampa, FL</span></div>
@@ -1016,7 +1019,7 @@
                   <div class="tst-avatar" style="background:var(--cta)">M</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"I always figured trading was just gambling with extra steps. Seeing the actual selection criteria laid out changed my mind completely."</p>
               <div class="who">Marcus T. <span>Las Vegas, NV</span></div>
@@ -1029,7 +1032,7 @@
                   <div class="tst-avatar" style="background:var(--primary)">N</div>
                   <div class="stars">★★★★★</div>
                 </div>
-                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.3-8.1C1.02 10.6 1.4 7.4 4 5.8c2.2-1.35 4.9-.7 6.4 1.2l1.6 2 1.6-2c1.5-1.9 4.2-2.55 6.4-1.2 2.6 1.6 2.98 4.8 1.3 7.1C18.7 16.65 12 21 12 21z"/></svg>
+                <svg class="tst-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-4-4 1.41-1.41L10.5 13.67l5.59-5.59L17.5 9.5l-7 7z"/></svg>
               </div>
               <p>"Wish this existed when I graduated. Would have saved me at least two years of trading on vibes instead of a system."</p>
               <div class="who">Natalie R. <span>Salt Lake City, UT</span></div>
