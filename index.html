@@ -17,10 +17,10 @@
          JSON-LD all point here).
       3) Purchase link: search data-checkout and href="#offerta" — currently a placeholder,
          needs a real checkout URL once one exists for this product.
-      4) Meta Pixel: NOT YET INSTALLED. Do not reuse the Physics Study Lab pixel ID here —
-         that would mix two unrelated products' conversion data in Meta's system. Create a
-         new pixel for Finance Study Lab and paste it in below (see MM_PRODUCT for the event
-         payload shape to keep).
+      4) Meta Pixel: INSTALLED (2026-10-01), id 4633079520296335 — shared with Physics Study
+         Lab on purpose, since both run under the same Meta page. Segment the two products in
+         Meta with a custom conversion on content_ids = finance-study-lab-kit, or on a
+         financestudylab.com URL rule.
       5) Social-proof numbers (students, recent purchases) are placeholders — swap for real data.
       6) The author section (name, bio, photo) needs your real details.
       7) Educational-content disclaimer in the footer: keep it, and get it checked by someone
@@ -33,10 +33,22 @@
          final CTA.
   -->
 
-  <!-- Meta Pixel: paste your own Finance Study Lab Facebook Pixel script here. Do NOT reuse
-       the Physics Study Lab pixel (4633079520296335) -- see MM_PRODUCT below for the event
-       payload shape once you wire it up (mirrors the pattern used on physicstudylab). -->
+  <!-- Meta Pixel.
+       Same pixel id as Physics Study Lab, and deliberately so: both sit under the same Meta
+       page and the social accounts are being unified, so one pixel means one pool of signal
+       rather than two thin ones.
+       The payloads below still carry their own content_ids, name and value, so each product
+       can be optimised and reported on separately -- build custom conversions in Meta on
+       `content_ids = finance-study-lab-kit`, or on a financestudylab.com URL rule. -->
   <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,
+    'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4633079520296335');
+    fbq('track', 'PageView');
+
     var MM_PRODUCT = {
       content_ids: ['finance-study-lab-kit'],
       content_name: 'Markets Illustrated: The Leader Screen System',
@@ -44,7 +56,24 @@
       value: 47,
       currency: 'USD'
     };
+    fbq('track', 'ViewContent', MM_PRODUCT);
+
+    // InitiateCheckout fires ONLY when the buy button actually leaves for a checkout.
+    // Today data-checkout still points at "#offerta", an anchor on this page, so firing
+    // here would report a checkout start every time somebody scrolled to the pricing --
+    // training Meta on a conversion that never happened. The guard removes itself the
+    // moment a real checkout URL is pasted in.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-checkout]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href.charAt(0) === '#' || href === '') return;
+      fbq('track', 'InitiateCheckout', MM_PRODUCT);
+    }, true);
   </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+    src="https://www.facebook.com/tr?id=4633079520296335&ev=PageView&noscript=1"></noscript>
+  <!-- End Meta Pixel -->
   <!--
     Purchase event should NOT be fired on this page: it cannot confirm a completed
     payment (the buy button goes to an external checkout). Fire
