@@ -396,13 +396,15 @@
     .tst-nota { text-align: center; font-size: 12.5px; color: var(--text-light); margin-top: 18px; line-height: 1.6; }
 
     .author-section { background: #f7f9fd; }
-    .author-content { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 32px; align-items: center; }
-    .author-image { max-width: 300px; margin: 0 auto; }
-    .author-image img { border-radius: 12px; box-shadow: var(--shadow); }
-    .author-bio h4 { color: var(--primary); font-size: 16px; font-weight: 700; margin-bottom: 8px; }
-    .author-bio p { font-size: 16px; line-height: 1.8; }
-    .author-social { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); font-weight: 700; font-size: 15px; border: 1.5px solid var(--border); border-radius: 999px; padding: 9px 18px; transition: border-color .18s, color .18s; }
-    .author-social:hover { border-color: var(--accent); color: var(--accent); }
+    /* No portrait: the section is the writing plus one way to verify who wrote
+       it. With the photo column gone the bio centres on a single measure, and
+       the X link stops being a footnote and becomes the thing you act on. */
+    .author-content { max-width: 760px; margin: 0 auto; text-align: center; }
+    .author-bio h3 { font-size: 30px; }
+    .author-bio h4 { color: var(--primary); font-size: 16px; font-weight: 700; margin-bottom: 18px; }
+    .author-bio p { font-size: 16px; line-height: 1.8; text-align: left; }
+    .author-social { display: inline-flex; align-items: center; justify-content: center; gap: 12px; margin-top: 30px; color: #fff; background: var(--primary); font-weight: 800; font-size: 19px; letter-spacing: 0.01em; border: 2px solid var(--primary); border-radius: 999px; padding: 16px 38px; transition: background .18s, border-color .18s, transform .18s; }
+    .author-social:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
 
     .recap-list { max-width: 700px; margin: 32px auto; }
     .recap-list li { padding: 12px 0; font-size: 18px; display: flex; align-items: flex-start; gap: 12px; }
@@ -556,8 +558,6 @@
       .hero .subheadline { font-size: 20px; }
       .section { padding: 80px 20px; }
       .section-snug-top { padding-top: 40px; }
-      .author-content { grid-template-columns: 300px 1fr; text-align: left; }
-      .author-image { margin: 0; }
       .scroll-hint { display: none; }
     }
     @media (min-width: 1024px) {
@@ -1368,9 +1368,6 @@
       <h2 class="text-center">Who's Behind Finance Study Lab</h2>
 
       <div class="author-content">
-        <div class="author-image">
-          <img src="./img/author.webp" alt="Bruno Gazze, Founder of Finance Study Lab" width="1024" height="1024" loading="lazy" decoding="async">
-        </div>
         <div class="author-bio">
           <h3>Bruno Gazze</h3>
           <h4>Economist &middot; Financial Markets Educator &middot; Founder</h4>
@@ -1379,7 +1376,7 @@
           <p>This material wasn't created simply to sell another finance book. It was created <strong>because I know how overwhelming financial markets can feel when you're taught to memorize formulas, ratios and theories instead of understanding what actually drives them</strong>.</p>
           <p>And I discovered that when your brain <strong>sees how an idea works</strong>, rather than simply reading about it, everything changes.</p>
           <a href="https://x.com/BrunoGazze" target="_blank" rel="noopener" class="author-social">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="24" height="24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             <span>@BrunoGazze on X</span>
           </a>
         </div>
