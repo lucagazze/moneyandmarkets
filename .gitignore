@@ -1,1 +1,26 @@
 .DS_Store
+
+# Páginas de los libros pagos. Nunca al repo público: el sitio se despliega
+# desde acá, así que un `git add .` las publicaría enteras y gratis. En Physics
+# Study Lab esto ya casi pasa con 169 MB de PDFs; acá son 18 MB de PNG que
+# hoy están sin seguimiento y a un comando de distancia de quedar expuestos.
+#
+# Las muestras que SÍ van en el landing viven sueltas en img/ (page-1.jpg,
+# bonus1-sample-*.jpg) y no las toca esta regla.
+img/book/
+img/book-b-leader-screen/
+
+# Nada de PDFs en el repo, por la misma razón.
+*.pdf
+
+# EL LIBRO ENTERO, fuente incluida. Este repo es PUBLICO y de el se despliega
+# el sitio: subir book/content/ seria publicar gratis, en texto plano y
+# indexable por Google, las 22.396 palabras del libro que se vende a $37.
+#
+# La nota anterior decia que la fuente SI iba al repo "para poder corregir una
+# errata sin regenerar una imagen". Eso es cierto en un repo privado. Aqui no:
+# el producto es el texto.
+#
+# El libro vive solo en el disco y en la copia de seguridad. Si algun dia hace
+# falta versionarlo, va en un repo aparte y privado.
+book/

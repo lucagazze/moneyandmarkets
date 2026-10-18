@@ -92,6 +92,52 @@ LEAD MAGNET (gratis): The 15-Minute Market Brief (recorte del Bono 2)
 
 ---
 
+## 3b. Arquitectura de catálogo (añadido 2026-10-08)
+
+Tres niveles, como Physics Study Lab, **pero el escalón es de PROFUNDIDAD, no de
+seriedad.** Los tres se ven profesionales.
+
+```
+ENTRADA    The Market Field Guide       ~40 pp   $19
+           Leer un gráfico, qué mueve un precio, el vocabulario, y la
+           historia de mercado (Livermore entra acá). Mismo diseño de
+           manual de campo.
+
+MÓDULOS    Los 4 bonos                  $27 c/u
+           Scorecard · Morning Brief · Interview talk-track · Watchlist
+           Ya definidos en la sección 3. Son la capa modular; no hay
+           que inventar otra.
+
+PRO        The Leader Screen            90-120 pp   $67
+           El sistema completo. La versión pro de todo.
+```
+
+**CORRECCIÓN 2026-10-08.** El párrafo que sigue descartaba la ilustración
+entera, y eso estaba mal planteado: lo que hay que descartar es la ilustración
+*de personajes*, no el *diagrama técnico*. Los tres niveles llevan la anatomía
+de página de The Final Book —diagrama de línea limpio, pie de figura, caja de
+idea clave— y los tres se ven profesionales. Ver METHOD.md sección 7b.
+
+**Por qué el de entrada igual NO se llama "Markets Illustrated".** La sección 5 de este
+mismo brief descarta la estética ilustrada porque el avatar —futuro analista
+que quiere verse serio— necesita credibilidad, y un libro de dibujitos se la
+quita. Esa decisión vale también para el producto de entrada. La diferencia con
+física es real y no es cosmética: **el chico de GCSE compra porque no entiende;
+el futuro analista compra para parecer serio.** Y física tiene un temario
+cerrado que hace que "todo, ilustrado" sea una promesa completa; "mercados
+ilustrados" no tiene borde.
+
+Las 11 páginas de Livermore ya producidas no se tiran: son historia de mercado
+y encajan en el nivel de entrada.
+
+**ORDEN DE EJECUCIÓN — no negociable.** Esta arquitectura se escribe hoy para
+que cada capítulo sepa a qué nivel pertenece, pero **se termina The Leader
+Screen primero**. Physics llegó a su catálogo enviando productos de a uno, y
+cada uno pagó el siguiente. Planificar tres líneas con una al 33 % termina en
+tres cosas al 33 %.
+
+---
+
 ## 4. Estructura del ebook (cerrado, con una modificación)
 
 Se conserva la estructura de 14 capítulos del brief original, con un cambio:
