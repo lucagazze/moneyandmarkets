@@ -27,7 +27,7 @@
          qualified before this goes live paid-traffic — financial-education products get more
          regulatory attention (FTC/SEC) than a study guide would. This also now carries the
          CAN SLIM/O'Neil non-affiliation disclaimer — do not remove it.
-      8) Pricing ($27, value stack $105; arranco en $37, bajado para el test de la primera semana) is a proposed number matching the 2-bonus structure
+      8) Pricing ($37, value stack $105) is a proposed number matching the 2-bonus structure
          locked in PRODUCT-BRIEF-FINAL.md — confirm/adjust before launch, then update it
          consistently across: MM_PRODUCT below, JSON-LD, hero, decision box, recap, FAQ,
          final CTA.
@@ -53,7 +53,7 @@
       content_ids: ['finance-study-lab-kit'],
       content_name: 'The Leader Screen',
       content_type: 'product',
-      value: 27,
+      value: 37,
       currency: 'USD'
     };
     fbq('track', 'ViewContent', MM_PRODUCT);
@@ -77,14 +77,14 @@
   <!--
     Purchase event should NOT be fired on this page: it cannot confirm a completed
     payment (the buy button goes to an external checkout). Fire
-    fbq('track','Purchase',{value:27,currency:'USD'}) on the post-payment
+    fbq('track','Purchase',{value:37,currency:'USD'}) on the post-payment
     confirmation page/URL instead -- firing it here would report fake conversions to Meta.
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#0b1220">
   <title>The Leader Screen — 15 Chapters + 4 Appendices</title>
-  <meta name="description" content="The seven-letter screen for finding market leaders, in 91 illustrated pages: one chapter per letter, plus bases, position sizing and the market rule that overrides them all. $27, 30-day guarantee.">
+  <meta name="description" content="The seven-letter screen for finding market leaders, in 91 illustrated pages: one chapter per letter, plus bases, position sizing and the market rule that overrides them all. $37, 30-day guarantee.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="Finance Study Lab">
   <link rel="canonical" href="https://financestudylab.com/">
@@ -630,7 +630,7 @@
               "hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":30,"applicableCountry":"US"}}},
    {"@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"How will I receive the material?","acceptedAnswer":{"@type":"Answer","text":"As soon as you complete your purchase you'll get an automatic email with the access link. It's high-resolution PDF, ready to download, print or read on any device."}},
-    {"@type":"Question","name":"Is it a one-off payment or a subscription?","acceptedAnswer":{"@type":"Answer","text":"One-off payment of $27. No installments, no recurring charges. Pay once and the material is yours for good."}},
+    {"@type":"Question","name":"Is it a one-off payment or a subscription?","acceptedAnswer":{"@type":"Answer","text":"One-off payment of $37. No installments, no recurring charges. Pay once and the material is yours for good."}},
     {"@type":"Question","name":"Is this financial advice, or official CAN SLIM material?","acceptedAnswer":{"@type":"Answer","text":"No to both. Finance Study Lab is educational content that explains how growth-stock selection and timing frameworks work. It is not personalized financial, investment, tax or legal advice, and it does not recommend specific stocks. The CAN SLIM framework was developed by William J. O'Neil; this is an independent educational interpretation and is not affiliated with, endorsed by, or sponsored by William O'Neil + Co., IBD, or MarketSurge."}},
     {"@type":"Question","name":"Do I need any experience with investing?","acceptedAnswer":{"@type":"Answer","text":"You should know the basics -- what a stock and a chart are. This teaches you the system for selecting and timing growth stocks, the part your finance classes usually skip."}},
     {"@type":"Question","name":"Can I print the material?","acceptedAnswer":{"@type":"Answer","text":"Yes. The PDFs are designed in high resolution, ideal for printing, annotating or using as a quick reference."}}]}]}
@@ -1289,11 +1289,11 @@
         <div class="db-anchoring">
           <p class="db-old-price">Total value: $105</p>
           <p class="db-new-price-label">Today only:</p>
-          <p class="db-new-price">$27</p>
-          <span class="db-discount-badge">SAVE $78</span>
+          <p class="db-new-price">$37</p>
+          <span class="db-discount-badge">SAVE $68</span>
         </div>
 
-        <a href="https://pay.financestudylab.com/c/financestudylab/kit" data-checkout class="db-cta">YES, I WANT THE COMPLETE KIT FOR $27</a>
+        <a href="https://pay.financestudylab.com/c/financestudylab/kit" data-checkout class="db-cta">YES, I WANT THE COMPLETE KIT FOR $37</a>
 
         <div class="db-trust">
           <span class="db-trust-item"><span class="db-trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>Secure checkout</span>
@@ -1379,7 +1379,7 @@
 
       <div class="price-recap">
         <p class="old-price">$105</p>
-        <p class="new-price">$27</p>
+        <p class="new-price">$37</p>
       </div>
 
       <div style="text-align: center;">
@@ -1415,7 +1415,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq2">Is it a one-off payment or a subscription?</button>
-          <div class="faq-answer" id="faq2" hidden><p>One-off payment of $27. No installments, no recurring charges, no surprises. Pay once and the material is yours for good.</p></div>
+          <div class="faq-answer" id="faq2" hidden><p>One-off payment of $37. No installments, no recurring charges, no surprises. Pay once and the material is yours for good.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq3">Is this financial advice, or official CAN SLIM material?</button>
@@ -1452,13 +1452,13 @@
 
       <div class="cta-summary">
         <ul>
-          <li>One-off cost: $27</li>
+          <li>One-off cost: $37</li>
           <li>Guarantee: 30 days, no questions asked</li>
           <li>Access: instant, by email</li>
         </ul>
       </div>
 
-      <a href="#offerta" class="btn-cta">I WANT THE COMPLETE KIT FOR $27</a>
+      <a href="#offerta" class="btn-cta">I WANT THE COMPLETE KIT FOR $37</a>
 
       <p class="cta-small-print" style="margin-top: 24px;">
         <svg aria-hidden="true" focusable="false" class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg> You'll receive the material by email in under 2 minutes
