@@ -40,6 +40,20 @@
        The payloads below still carry their own content_ids, name and value, so each product
        can be optimised and reported on separately -- build custom conversions in Meta on
        `content_ids = finance-study-lab-kit`, or on a financestudylab.com URL rule. -->
+  <!-- Microsoft Clarity (grabacion de sesion). Mismo proyecto que el checkout
+       en pay.financestudylab.com: Clarity acepta el mismo script en todos los
+       subdominios, asi que landing -> checkout -> pos-pago quedan en UNA sola
+       grabacion en vez de tres sueltas.
+       Solo Finance: la documentacion de Clarity prohibe usarlo en sitios
+       dirigidos a menores de 18, y Physics apunta a GCSE y A-level. -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "z28spk72ky");
+  </script>
+
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
